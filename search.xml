@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>个人简介</title>
+      <link href="/2022/02/12/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
+      <url>/2022/02/12/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/</url>
+      
+        <content type="html"><![CDATA[<p>大家好我是元歌小白是一位高中生喜欢网络安全技术希望各位多多关照☆*: .｡. o(≧▽≦)o .｡.:<em>☆<br>本人快手号：</em><strong>APPINVENTOR</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 简介 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -简介 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>kali下载教程</title>
+      <link href="/2022/01/26/kali%E4%B8%8B%E8%BD%BD/"/>
+      <url>/2022/01/26/kali%E4%B8%8B%E8%BD%BD/</url>
+      
+        <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901371647&auto=1&height=66"></iframe><p>Hello!大家好，我是元歌小白今天我来给大家讲解一下如何下载Kali Linux<br>首先我们先进入KALI的 <strong><a href="https://www.kali.org/">官网</a></strong> <a href="http://www.kali.org/">www.kali.org</a><br><img src="https://s4.ax1x.com/2022/01/26/7OSI1S.png"><br>然后点击DOWNLOAD按钮进入下载页<br><img src="https://s4.ax1x.com/2022/01/26/7Op4ER.png"><br><img src="https://s4.ax1x.com/2022/01/26/7O9PxS.png"><br>Bare Metal是镜像，Virtual Mchines是虚拟机如果是在虚拟机里面搭建kali我推荐用Virtual Mchines选项，如果在物理机上面搭建的话就用Bare Mrtal选项这里我是在虚拟机上面搭建的所以我用的是Virtual Mchines选项，我们单击Virtual Mchines下面的Rrecommended按钮进入虚拟机选择页面<br><img src="https://s4.ax1x.com/2022/01/26/7OPSc8.png"><br><img src="https://s4.ax1x.com/2022/01/26/7OPQHJ.png"><br>这里选择我们所使用的虚拟机，小白我用的是VM虚拟机，所以我单击的是VMware下面的下载按钮<br><img src="https://s4.ax1x.com/2022/01/26/7Oi3qg.png"><br>点击完下载按钮后要等待一段时间（这里推荐用迅雷下载）<br>——————————————————————————————————————————<br><img src="https://s4.ax1x.com/2022/01/26/7OFx91.png"><br>下载完后进入指定的下载文件夹下把kali的压缩包解压到自己喜欢的位置并把路径记下来，这里我把文件解压到D盘<br><img src="https://s4.ax1x.com/2022/01/26/7OA1sK.png"><br>解压完成后我们打开VM单机打开虚拟机<br><img src="https://s4.ax1x.com/2022/01/26/7OAgij.png"><br><img src="https://s4.ax1x.com/2022/01/26/7OEmm8.png"><br>然后找打kali的文件夹打开虚拟机<br><img src="https://s4.ax1x.com/2022/01/26/7OEcnK.png"><br><img src="https://s4.ax1x.com/2022/01/26/7OEqHS.png"><br>再接着我们单机编辑虚拟机设置把显示器的缩放比例改为自由拉升<br><img src="https://s4.ax1x.com/2022/01/26/7OZ5OP.png"><br>设置完成后开启虚拟机，如果有弹出床窗的话选择我已复制虚拟机。（虚拟机的初始用户名和密码都是kali）<br><img src="https://s4.ax1x.com/2022/01/26/7OeI39.png"><br>然后点击Log in 进入系统<br><img src="https://s4.ax1x.com/2022/01/26/7OmPDP.png"><br>到这里我们kali系统就算下载完了。我的这篇文章也就到这里结束了我们下一个文章再见，拜拜ヽ(✿ﾟ▽ﾟ)ノ</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Kali </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> kali </tag>
+            
+            <tag> 网络安全 </tag>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
