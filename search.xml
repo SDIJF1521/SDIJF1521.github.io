@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>hacker_dictionary模块使用文档</title>
+      <link href="/2022/06/09/hacker-dictionary%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/"/>
+      <url>/2022/06/09/hacker-dictionary%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/</url>
+      
+        <content type="html"><![CDATA[<p>hello! 大家好我是小白，今天我来给大家讲解一下我制作的字点生成模块<strong>hacker_dictionary</strong></p><p>这个模块的下载命令如下：<br><code>pip install hacker_dictionary</code></p><p>hacker_dictionary字典生成模块的作用是用来生成暴力破解用的密码字典，hacker_dictionary模块里面有四个函数<br>这四个函数分别负责纯数字密码生成(Pure)、通用密码生成(General)、社工密码生成(Social_workers)、列表txt转换器(flie)，三个用于密码字典生成的模块生成材料的原始密码数据都是以列表的形式呈现。</p><p>现在我来详细讲解这四个函数的用法</p><p>Pure是一个纯数字的密码生成函数它只能生成纯数字的密码，Purl的使用语法如下：</p><hr><p><em>hacker_dictionary.hacker_dictionary.Pure(minvalue,maxvalue,interval)</em></p><p>minvalue:最小密码数值，数据类型为set,但是请您输入整数<br>maxvalue:最大密码数值，数据类型为int<br>interval:步长，可选参数默认值为1，数据类型int</p><hr><p>例：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> hacker_dictionary</span><br><span class="line">A = hacker_dictionary.hacker_dictionary.Pure(<span class="string">&#x27;000000&#x27;</span>,<span class="number">999999</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> A:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure><p><img src="https://s1.ax1x.com/2022/06/09/XyDPEj.png"></p><p>Generals是一个通用的密码生成函数，它可以生成任意组合的密码，General的语法如下：</p><hr><p><em>hacker_dictionary.hacker_dictionary.General(character,min,mmax)</em></p><p>character:生成密码需要的字符，数据类型为set<br>min:最小密码长度，数据类型为int<br>max:最大密码长度，数据类型为int</p><hr><p>例：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> hacker_dictionary</span><br><span class="line">A = hacker_dictionary.hacker_dictionary.General(<span class="string">&#x27;paswd&#x27;</span>,<span class="number">8</span>,<span class="number">8</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> A:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure><p><img src="https://s1.ax1x.com/2022/06/09/XyrRl6.png"></p><p>Social_workers是一个社工字典生成函数，它利用社会工程学进行密码生成，Social_workers的语法如下：</p><hr><p><em>hacker_dictionary.hacker_dictionary.Social_workers(name,Age,birthday,Company_school,Lucky_number,Name_relatives,Relative_age,Relative_birthday,Relative_Company_school)</em></p><p>name: 目标的姓名,数据类型为set<br>Age: 目标的年龄,数据类型为set<br>birthday: 目标的生日，生日的输入格式为xxx&#x2F;xx&#x2F;x(例：2022&#x2F;2&#x2F;3),数据类型为set<br>Company_school: 目标的公司或学校,数据类型为set<br>Lucky_number: 目标的幸运数字,数据类型为set<br>Name_relatives: 目标的亲人姓名,多个参数请用|分割(例：xiaomi|xiaohong),数据类型为set<br>Relative_age: 目标的亲人年龄,多个参数请用|分割,数据类型为set<br>Relative_birthday: 目标的亲人生日,生日的输入格式为xxx&#x2F;xx&#x2F;x;多个参数请用|分割(例：2022&#x2F;1&#x2F;2|2004&#x2F;3&#x2F;5)，数据类型为set<br>Relative_Company_school: 目标的亲人公司或学校,多个参数请用|分割,数据类型为set<br>length: 长度数据类型为int</p><hr><p>例：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> hacker_dictionary</span><br><span class="line">A = hacker_dictionary.hacker_dictionary.Social_workers(<span class="string">&#x27;xiaoming&#x27;</span>,<span class="string">&#x27;11&#x27;</span>,<span class="string">&#x27;2010/10/1&#x27;</span>,<span class="string">&#x27;cx&#x27;</span>,<span class="string">&#x27;1&#x27;</span>,<span class="string">&#x27;lili|huangmin&#x27;</span>,<span class="string">&#x27;31&#x27;</span>,<span class="string">&#x27;1980/111/1&#x27;</span>,<span class="string">&#x27;&#x27;</span>,<span class="number">6</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> A:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure><p><img src="https://s1.ax1x.com/2022/06/09/XyyWZD.png"></p><p>flie函数是用于把列表转换成为txt文件的，flie函数语法如下：</p><hr><p><em>hacker_dictionary.hacker_dictionary.flie(File_name,List_Name)</em></p><p>File_name:文件名称，数据类型set<br>List_Name:列表名称</p><hr><p>例：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> hacker_dictionary</span><br><span class="line">A = hacker_dictionary.hacker_dictionary.General(<span class="string">&#x27;paswd&#x27;</span>,<span class="number">8</span>,<span class="number">8</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> A:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line">hacker_dictionary.hacker_dictionary.flie(<span class="string">&#x27;mima.txt&#x27;</span>,A)</span><br></pre></td></tr></table></figure><p><img src="https://s1.ax1x.com/2022/06/09/Xy6tfA.png"><br><img src="https://s1.ax1x.com/2022/06/09/XycYHU.png"></p><p>实战项目：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> hacker_dictionary</span><br><span class="line"><span class="comment">#获取数据</span></span><br><span class="line">Name_flie = <span class="built_in">input</span>(<span class="string">&#x27;请定义文件名称：&#x27;</span>)</span><br><span class="line"><span class="keyword">while</span> <span class="built_in">len</span>(Name_flae) == <span class="literal">False</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;文件名称不能为空！&#x27;</span>)</span><br><span class="line">    Name_flie = <span class="built_in">input</span>(<span class="string">&#x27;请定义文件名称：&#x27;</span>)</span><br><span class="line">Character = <span class="built_in">input</span>(<span class="string">&#x27;请输入组成密码的字符：&#x27;</span>)</span><br><span class="line"><span class="keyword">while</span> <span class="built_in">len</span>(Character) == <span class="literal">False</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;组成密码的字符不能为空！&#x27;</span>)</span><br><span class="line">    Character = <span class="built_in">input</span>(<span class="string">&#x27;请输入组成密码的字符：&#x27;</span>)</span><br><span class="line">min_1 = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入最小密码长度：&#x27;</span>))</span><br><span class="line"><span class="keyword">while</span> <span class="built_in">min</span> &lt;=<span class="number">0</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;密码长度不能小于0！&#x27;</span>)</span><br><span class="line">    <span class="built_in">min</span> = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入最小密码长度：&#x27;</span>))</span><br><span class="line">max_1 =  <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入最大密码长度：&#x27;</span>))</span><br><span class="line"><span class="keyword">while</span> <span class="built_in">max</span> &lt; <span class="built_in">min</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;密码长度不能小于0！&#x27;</span>)</span><br><span class="line">    <span class="built_in">max</span> = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入最大密码长度：&#x27;</span>))</span><br><span class="line"><span class="comment">#生成密码</span></span><br><span class="line">password = hacker_dictionary.hacker_dictionary.General(Character,min_1,max_1)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> password:</span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line"><span class="comment">#存入密码</span></span><br><span class="line">hacker_dictionary.hacker_dictionary.flie(Name_flie,password)</span><br></pre></td></tr></table></figure><p>这些就是hacker_dictionary模块的全部用法了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 网络安全 </tag>
+            
+            <tag> hacker_dictionary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>KALI换源</title>
       <link href="/2022/02/13/KALI%E6%8D%A2%E6%BA%90/"/>
       <url>/2022/02/13/KALI%E6%8D%A2%E6%BA%90/</url>
@@ -20,9 +49,9 @@
       
         <tags>
             
-            <tag> kali </tag>
-            
             <tag> 网络安全 </tag>
+            
+            <tag> kali </tag>
             
             <tag> 基础 </tag>
             
@@ -74,9 +103,9 @@
       
         <tags>
             
-            <tag> kali </tag>
-            
             <tag> 网络安全 </tag>
+            
+            <tag> kali </tag>
             
             <tag> 基础 </tag>
             
